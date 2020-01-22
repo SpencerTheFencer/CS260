@@ -34,7 +34,7 @@ body {
 }
 
 .section {
-	padding: 15px 20px;
+	padding: 10px 20px;
 }
 
 h1 {
@@ -45,11 +45,48 @@ h1 {
 h2 {
 	color: #2E87C2;
 	padding: 10px 0px;
-	font-style: italic;
+}
+
+.page-link,
+.page-link:link,
+.page-link:visited {
+	text-decoration: none;
+	color: #777B7E
+}
+
+.content {
+	max-width: 500px;
 }
 
 .contact {
-	background-color: #f3f3f3;
 	border: 1px solid #777B7E;
 	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contact-title {
+	color: #777B7E
+}
+
+.contact-pic {
+	width: 50px;
+	padding: 10px 10px;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+	.contact {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.contact-title {
+		padding-top: 10px;
+	}
 }
