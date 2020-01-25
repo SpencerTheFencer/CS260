@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  padding-top: 40px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heading-text {
+  text-align: center;
+  font-size: 75px;
+}
+
+.sub-heading {
+  font-size: 30px;
+}
+
+.mod-text {
+  font-family: "garamond";
+  color: #505050;
+}
+
+.footer {
+  background-color: #F6F6F4;
+  height: 60px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.github-section {
+  padding: 20px 20px;
+}
+
+.github-link,
+.github-link:link,
+.github-link:after {
+  font-size: 18px;
+  color: #505050;
+}
+
+/* menu navigation bar */
+.logo {
+  width: 150px;
+}
+
+.navbar-brand {
+  padding-left: 20px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.nav-item {
+  padding: 0px 10px;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.navbar {
+  border-bottom-style: solid;
+  border-bottom-color: #585858
+}
+
+/* masonry photo grid */
+.masonry {
+  padding: 0 10px;
+  margin: 1.5em auto;
+  max-width: 768px;
+  column-gap: 1em;
+}
+
+.item {
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.item-pic {
+  margin: 0px 0px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* home page flexbox */
+.main-container {
+  margin: 25px 0px;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-item {
+  width: 70%;
+  max-width: 600px;
+  margin: 20px 10px;
+}
+
+.main-photo {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.main-description {
+  font-size: 48px;
+  max-height: 300px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 24px;
+  max-height: 300px;
+}
+
+/* About page */
+.about-container {
+  margin: 75px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-background {
+  background-color: #F6F6F4;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  color: #BD8F75;
+  font-size: 24px;
+  max-width: 440px;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.about-description {
+  font-size: 18px;
+  max-width: 540px;
+  text-align: center;
+}
+
+.about-photo img {
+  width: 400px;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+
+/* Review page */
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.review-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.review-item {
+  background-color: #F6F6F4;
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px auto;
+  padding: 20px 20px;
+  flex: 1;
+  display: flex;
+}
+
+.review-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review-text {
+  margin: 10px 10px;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 1040px) {
+  .masonry {
+    column-count: 4;
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1039px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 799px) {
+  .masonry {
+    column-count: 2;
+    max-width: 520px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .masonry {
+    column-count: 1;
+    max-width: 480px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .about-background {
+    height: 525px;
+  }
+
+  .about-photo img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .about-background {
+    height: 600px;
+  }
+
+  .about-photo img {
+    width: 100%;
+    max-width: 275px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .main-container {
+    flex-direction: row;
+  }
+
+  .main-container :nth-child(1) {
+    order: 0;
+  }
+
+  .main-container :nth-child(2) {
+    order: 0;
+  }
+
+  .main-container :nth-child(3) {
+    order: 2;
+  }
+
+  .main-container :nth-child(4) {
+    order: 1;
+  }
+
+  .about-container {
+    flex-direction: row;
+  }
+
+  .about-background {
+    width: 800px;
+    height: 500px;
+  }
+
+  .about-photo img {
+    float: right;
+    width: 400px;
+    margin-left: -420px;
+    margin-right: 20px;
+  }
+}
