@@ -156,12 +156,12 @@
 
 .about-description {
   font-size: 18px;
-  max-width: 540px;
+  max-width: 480px;
   text-align: center;
 }
 
 .about-photo img {
-  width: 400px;
+  width: 350px;
   margin: 10px 10px;
   border-radius: 5px;
 }
@@ -288,7 +288,7 @@
 
   .about-photo img {
     float: right;
-    width: 400px;
+    width: 350px;
     margin-left: -420px;
     margin-right: 20px;
   }
