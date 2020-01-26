@@ -276,7 +276,7 @@
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1250px) {
   .about-container {
     flex-direction: row;
   }
@@ -289,7 +289,7 @@
   .about-photo img {
     float: right;
     width: 350px;
-    margin-left: -420px;
+    margin-left: -370px;
     margin-right: 20px;
   }
 }
