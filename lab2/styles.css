@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20px 0px;
+  text-align: center;
+  background-color: #CCD6E3;
+  border-bottom: 2px solid gray;
+}
+
+.background {
+  background-color: #F7F9FB;
+  min-height: 600px;
+}
+
+h1 {
+  color: #29648A;
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+}
+
+h2, h3, .info, form label {
+  color: #31708E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form {
+  padding: 20px 30px;
+}
+
+#weatherSubmit {
+  margin-top: 8px;
+}
+
+.current-container {
+  width: 90%;
+  margin: 0px auto;
+  padding: 16px 16px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+}
+
+.double-horizontal-item {
+  min-width: 180px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 10px 20px;
+  flex-grow: 0;
+}
+
+.temp {
+  margin: 10px 0px;
+  color: #464866;
+  font-size: 36px;
+}
+
+.feels_like {
+  font-size: 24px;
+  color: #25274D;
+}
+
+.description {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+#max {
+  margin-left: 20px;
+}
+
+.forecast-title {
+  color: #25274D;
+  padding: 10px 0px;
+  font-size: 28px;
+}
+
+.forecast-table {
+  width: 95%;
+  max-width: 600px;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+.day {
+  border: 2px solid slategray;
+  border-top: none;
+}
+
+.day:first-of-type {
+  border-top: 2px solid slategray;
+}
+
+.row {
+  border-top: 1px solid darkgray;
+  display: flex;
+  align-items: center;
+}
+
+.row-item {
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.row-extra {
+  display: none;
+}
+
+.footer {
+  border-top: 2px gray solid;
+  background-color: #F6F6F4;
+  height: 60px;
+  width: 100%;
+  padding: 20px auto;
+}
+
+.github-section {
+  padding: 20px 20px;
+}
+
+.github-link,
+.github-link:link,
+.github-link:after {
+  font-size: 18px;
+  color: #505050;
+}
+
+@media only screen and (min-width: 1040px) {
+  .current-container {
+    max-width: 1040px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .forecast-table {
+    max-width: 960px;
+  }
+
+  .row-extra {
+    display: block;
+  }
+
+  .row-item {
+    margin-left: 30px;
+  }
+}
