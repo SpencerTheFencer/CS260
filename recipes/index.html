@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Recipes</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Simonetta&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='styles.css' />
+</head>
+
+<body>
+
+  <h1 class="header">Recipes</h1>
+
+  <div class="background">
+    <div class="selection">
+      <div class="search-recipe-section">
+        <h2>Search for recipes</h2>
+        <form>
+          <label>Enter a recipe:</label>
+          <input id="recipeInput" type="text"></input><br />
+        </form>
+        <button id="submitButton">Submit</button>
+      </div>
+
+      <h4>OR</h4>
+
+      <div class="random-recipe-section">
+        <h2>See a random recipe</h2>
+        <button id="randomButton">Random</button>
+      </div>
+    </div>
+    <div id="recipeResults">
+      <div id="recipe-image">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="github-section">
+      <p>This website uses <a href="https://www.themealdb.com/api.php" target="_blank" class="link">TheMealDB</a> to lookup recipes</p>
+      <a href="https://github.com/SpencerTheFencer/CS260" target="_blank" class="link">Github repository</a>
+    </div>
+  </div>
+
+  <script text="type/javascript" src="/script.js"></script>
+</body>
+
+</html>
