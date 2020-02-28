@@ -1,0 +1,40 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 20px 100px 0px 100px;
+  background: #f3f3f3;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+#firstButton {
+  margin-left: 40px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+}
+
+.footer {
+  border-top: 2px gray solid;
+  height: 60px;
+  width: 100%;
+  padding: 20px auto;
+  margin-top: 40px;
+}
+
+.github-section {
+  padding: 20px 20px;
+}
+
+.github-link,
+.github-link:link,
+.github-link:after {
+  font-size: 18px;
+  color: #505050;
+}
